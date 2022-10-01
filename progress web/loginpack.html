@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN FORUM</title>
+    <link rel="stylesheet" href="styleL.css">
+</head>
+<body>
+
+    <div class="center">
+        <h1>LOGIN</h1>
+        <form method="post">
+            <div class="txt-field">
+                <input type="text" required id="userName">
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt-field">
+                <input type="password" required id="password">
+                <span></span>
+                <label>Password</label>
+            </div>
+
+            <div class="pass">
+                <a href="forgot.html">Forgot Password?</a>
+            </div>
+            <input type="submit" id="login" onclick="login()">
+            <div class="singup-link">
+                Not a member? <a href="singup.html">SignUp</a>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="login.js" type="application/javascript" >
+
+    </script>
+</body>
+</html>

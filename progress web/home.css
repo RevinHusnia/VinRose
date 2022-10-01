@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(3, 3, 53);
+    overflow: hidden;
+}
+
+.slide-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+
+.slides-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.img{
+    position: relative;
+    width: 340px;
+    height: 250px;
+    transition: .5s;
+    filter: saturate(10%);
+}
+
+.button{
+    position: absolute;
+    width: 340px;
+    height: 250px;
+    transition: .2s;
+    background-color: rgba(0, 0, 0,);
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 2);
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1{
+    width: 580px;
+    height: 50vh;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2{
+    width: 580px;
+    height: 50vh;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3{
+    width: 580px;
+    height: 50vh;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4{
+    width: 580px;
+    height: 50vh;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5{
+    width: 580px;
+    height: 50vh;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6{
+    width: 580px;
+    height: 50vh;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7{
+    width: 680px;
+    height: 50vh;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span1:target ~ .image-slider {left: 70%;}
+#slider-span2:target ~ .image-slider {left: 50%;}
+#slider-span3:target ~ .image-slider {left: 25%;}
+#slider-span5:target ~ .image-slider {left: -25%;}
+#slider-span6:target ~ .image-slider {left: -50%;}
+#slider-span7:target ~ .image-slider {left: -70%;}
+
+
+.div1{
+    position: relative;
+    background-color: rgb(19, 20, 100);
+    width: 160%;
+    top: -45%;
+    height: 10vh;
+}
+
+.ul1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+.div1 li{
+    position: relative;
+    list-style-type: none;
+    padding: 30px;
+    margin:  5px;
+    top: -40px;
+    font-size: 20px;
+}
+
+.div1 li:hover{
+    border-radius: 5%;
+    background-color: rgb(75, 65, 167);
+}
+
+.div1 a{
+   text-decoration: none;
+   color: white;
+}
+
+.divh1 h1{
+    position: absolute;
+    color: white;
+}
