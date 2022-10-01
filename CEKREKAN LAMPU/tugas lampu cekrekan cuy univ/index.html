@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas cekrekan lampu</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- RUANG TAMU -->
+    <div class="flex justify-center items-center w-full bg-gray-800 gap-10">
+        <div class="div1">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="checked-btnon" onclick="cekrek1('on')">ON grup kamar</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="checked-btnoff" onclick="cekrek1('off')">OFF grup kamar</button>
+        </div>   
+        <div class="flex flex-col gap-3 items-center">
+            <img src="assest/image/off.gif" alt="" id="lampu1"  >
+
+            <label for="checked-toggle1" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" id="checked-toggle1" class="sr-only peer" onchange="cekrek()">
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+        
+        <div class="flex flex-col gap-3 items-center">
+            <img src="assest/image/off.gif" alt="" id="lampu2">
+            <label for="checked-toggle2" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" id="checked-toggle2" class="sr-only peer" onchange="cekrek()">
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+    </div>
+    <!-- RUANG TAMU -->
+
+    <!--Ruang makan -->
+    <div class="flex justify-center items-center w-full bg-gray-600 gap-10">
+        <div class="div2">
+            <h1>RUANG MAKAN</h1>
+        </div>
+        <div class="flex flex-col gap-3 items-center">
+            <img src="assest/image/off.gif" alt="" id="lampu3">
+            <label for="checked-toggle3" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" id="checked-toggle3" class="sr-only peer" onchange="cekrek()">
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+    </div>
+    <!--Ruang makan end-->
+
+    <!-- ruang keluarga -->
+    <div class="flex justify-center items-center w-full bg-gray-700 gap-10">
+        <div class="div3">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="checked-btnon" onclick="cekrek2('onn')">ON Ruang keluarga</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="checked-btnoff" onclick="cekrek2('offf')">OFF</button>
+        </div>
+
+        <div class="flex flex-col gap-3 items-center">
+            <img src="assest/image/off.gif" alt="" id="lampu4">
+        <label for="checked-toggle4" class="inline-flex relative items-center cursor-pointer">
+            <input type="checkbox" id="checked-toggle4" class="sr-only peer" onchange="cekrek()">
+            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+    </div>
+    <div class="flex flex-col gap-3 items-center">
+        <img src="assest/image/off.gif" alt="" id="lampu5">
+        <label for="checked-toggle5" class="inline-flex relative items-center cursor-pointer">
+            <input type="checkbox" id="checked-toggle5" class="sr-only peer" onchange="cekrek()">
+            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+    </div>
+    <div class="flex flex-col gap-3 items-center">
+        <img src="assest/image/off.gif" alt="" id="lampu6">
+        <label for="checked-toggle6" class="inline-flex relative items-center cursor-pointer">
+            <input type="checkbox" id="checked-toggle6" class="sr-only peer" onchange="cekrek()">
+            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>
+    </div>
+</div>
+    <!-- ruang keluarga end-->
+
+    <!-- menyalakan seluruhnya-->
+            <div class="div4">
+                <h1>ALL OF SAKLAR HERE</h1>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="checked-btnon" onclick="cekrekall('on')">ON ALL LAMP</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="checked-btnoff" onclick="cekrekall('off')">OFF ALL LAMP</button>
+            </div>
+    <!-- menyalakan seluruhnya end-->
+
+
+
+        <!-- script -->
+        <script src="lampu.js" type="application/javascript"></script>
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>

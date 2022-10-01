@@ -1,0 +1,41 @@
+.div1 {
+    margin-top: 20px;
+}
+
+.div2 h1{
+    color: white;
+   font-size: 30px;
+
+}
+
+.divlamp img{
+    margin-top: -200px;
+}
+
+.div3 img{
+    width: 90%;
+    height: 20vh;
+}
+
+.div4{
+    background-color: aqua;
+    width: 100%;
+    height: 29vh;
+}
+
+.div4 button{
+    margin-left: 35%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 30%;
+   height: 7vh;
+}
+
+.div4 h1{
+    position: relative;
+    font-size: 30px;
+    height: 10vh;
+    padding-left: 39%;
+}
