@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESI-6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a onclick="reRender()" id="home">HOME</a>
+            <a onclick="Darkmode()" id="mode">DarkMode</a>
+        </nav>
+        <h1>DARK MODE OF CUY UNIV</h1>
+        <p id="info" class="info"></p>
+    </div>
+
+    <!-- function -->
+    <script>
+        let info = document.getElementById('info'); 
+        let mode = document.getElementById('mode'); 
+        let home = document.getElementById('home'); 
+        let body = document.body;
+
+        const darkLimit = 7;
+        let darkCounter = 0;
+        let darkRemaningLeft;
+        function Darkmode(){
+
+            if(darkRemaningLeft == 1){
+                console.log('jatah anda habis');
+                info.textContent = "DARKMODE FINISHED"
+                mode.style.display = "none";
+                home.textContent = "RESTART"
+                return;
+            }
+            darkCounter += 1;
+            darkRemaningLeft = darkLimit - darkCounter;
+            
+            // render
+            info.textContent = `DarkMode use ${darkCounter}x, left ${darkRemaningLeft}`
+            
+            body.classList.toggle("dark");
+
+            
+        }
+        function reRender(){
+            location.reload()
+        }
+        </script>
+</body>
+</html>
