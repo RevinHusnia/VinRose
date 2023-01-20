@@ -1,0 +1,124 @@
+.user{
+    display: flex;
+    margin-top: 300px;
+    width: 100px;
+    height: 10vh;
+    padding-left: 50px;
+}
+
+.div1 input{
+    width: 300px;
+    height: 20px;
+}
+
+.div1 label{
+    font-size: 20px;
+}
+
+.div2{
+    margin-top: 20px;
+}
+
+.div2 input{
+    width: 300px;
+    height: 20px;
+}
+
+.div2 label{
+    font-size: 20px;
+}
+
+.div3{
+    margin-top: 20px;
+}
+
+.div3 input{
+    width: 300px;
+    height: 20px;
+}
+
+.div3 label{
+    font-size: 20px;
+}
+
+.div4{
+    margin-top: 20px;
+}
+
+.div4 input{
+    width: 300px;
+    height: 20px;
+}
+
+.div4 label{
+    font-size: 20px;
+}
+
+.div5{
+    margin-top: 20px;
+}
+
+.div5 input {
+    width: 300px;
+    height: 20px;
+}
+
+.div5 label{
+    font-size: 20px;
+}
+
+.div6 {
+    margin-top: 20px;
+}
+
+.div6 input{ 
+    width: 300px;
+    height: 20px;
+}
+
+.div6 label{
+    font-size: 20px;
+}
+
+.div9{
+    margin-top: 20px;
+}
+
+.div9 input{
+    width: 300px;
+    height: 20px;
+}
+
+.div9 label {
+    font-size: 20px;
+}
+
+.div7{
+    margin-top: 10px;
+}
+
+.div7 input{
+    width: 20px;
+    height: 20px;
+}
+
+.div7 label{
+    font-size: 20px;
+}
+
+.div8{
+    margin-top: 2px;
+}
+
+.div8 button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+
+    background-color: rgb(75, 75, 254);
+}
+
+.div8 a{
+    color: aliceblue;
+    text-decoration: none;
+}
